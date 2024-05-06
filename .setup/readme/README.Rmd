@@ -1,0 +1,24 @@
+---
+title: "ijapesigan/mplusautomation"
+author: "Ivan Jacob Agaloos Pesigan"
+date: "`r Sys.Date()`"
+output: github_document
+---
+
+<!-- README.md is generated from .setup/readme/README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+<!-- badges: start -->
+[![Make Project](https://github.com/ijapesigan/docker-mplusautomation/actions/workflows/make.yml/badge.svg)](https://github.com/ijapesigan/docker-mplusautomation/actions/workflows/make.yml)
+[![Docker Build and Push [multi]](https://github.com/ijapesigan/docker-mplusautomation/actions/workflows/docker-build-push-multi.yml/badge.svg)](https://github.com/ijapesigan/docker-mplusautomation/actions/workflows/docker-build-push-multi.yml)
+[![Docker Build and Push Dplyr [multi] (Daily)](https://github.com/ijapesigan/docker-mplusautomation/actions/workflows/docker-build-push-daily-multi-dplyr.yml/badge.svg)](https://github.com/ijapesigan/docker-mplusautomation/actions/workflows/docker-build-push-daily-multi-dplyr.yml)
+[![Shell Check](https://github.com/ijapesigan/docker-mplusautomation/actions/workflows/shellcheck.yml/badge.svg)](https://github.com/ijapesigan/docker-mplusautomation/actions/workflows/shellcheck.yml)
+<!-- badges: end -->
