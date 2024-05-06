@@ -8,10 +8,6 @@ Ivan Jacob Agaloos Pesigan
 
 [![Make
 Project](https://github.com/ijapesigan/docker-mplusautomation/actions/workflows/make.yml/badge.svg)](https://github.com/ijapesigan/docker-mplusautomation/actions/workflows/make.yml)
-[![Docker Build and Push
-\[multi\]](https://github.com/ijapesigan/docker-mplusautomation/actions/workflows/docker-build-push-multi.yml/badge.svg)](https://github.com/ijapesigan/docker-mplusautomation/actions/workflows/docker-build-push-multi.yml)
-[![Docker Build and Push Dplyr \[multi\]
-(Daily)](https://github.com/ijapesigan/docker-mplusautomation/actions/workflows/docker-build-push-daily-multi-dplyr.yml/badge.svg)](https://github.com/ijapesigan/docker-mplusautomation/actions/workflows/docker-build-push-daily-multi-dplyr.yml)
 [![Shell
 Check](https://github.com/ijapesigan/docker-mplusautomation/actions/workflows/shellcheck.yml/badge.svg)](https://github.com/ijapesigan/docker-mplusautomation/actions/workflows/shellcheck.yml)
 <!-- badges: end -->
