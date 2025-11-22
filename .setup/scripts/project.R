@@ -17,6 +17,8 @@
 
 project <- "docker-mplusautomation"
 
+rproject_ver <- NULL
+
 pkg_cran <- c()
 
 pkg_github <- c()
@@ -26,6 +28,8 @@ pkg_github_ref <- c()
 pkg_ver <- c()
 
 ver <- c()
+
+pkg_bioconductor <- c()
 
 ignore <- NULL
 
