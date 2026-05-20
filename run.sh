@@ -2,15 +2,26 @@
 
 set -e
 
-mkdir -p "/storage/home/${USER}/work/apptainer/tmp"
-mkdir -p "/storage/home/${USER}/work/apptainer/cache"
+APPTAINER_BASE="/storage/home/${USER}/work/apptainer"
+
+mkdir -p "${APPTAINER_BASE}"
 mkdir -p "/storage/home/${USER}/work/sif"
 
-chmod 700 "/storage/home/${USER}/work/apptainer/tmp"
-chmod 700 "/storage/home/${USER}/work/apptainer/cache"
+APPTAINER_TMPDIR="$(mktemp -d "${APPTAINER_BASE}/tmp.XXXXXXXXXX")"
+APPTAINER_CACHEDIR="$(mktemp -d "${APPTAINER_BASE}/cache.XXXXXXXXXX")"
 
-export APPTAINER_TMPDIR="/storage/home/${USER}/work/apptainer/tmp"
-export APPTAINER_CACHEDIR="/storage/home/${USER}/work/apptainer/cache"
+cleanup() {
+    rm -rf "${APPTAINER_TMPDIR}"
+    rm -rf "${APPTAINER_CACHEDIR}"
+}
+
+trap cleanup EXIT
+
+chmod 700 "${APPTAINER_TMPDIR}"
+chmod 700 "${APPTAINER_CACHEDIR}"
+
+export APPTAINER_TMPDIR
+export APPTAINER_CACHEDIR
 
 cp /storage/home/${USER}/work/software/mplus-9.01/ComboLinux64.bin scripts
 
