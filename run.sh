@@ -23,7 +23,7 @@ chmod 700 "${APPTAINER_CACHEDIR}"
 export APPTAINER_TMPDIR
 export APPTAINER_CACHEDIR
 
-cp /storage/home/${USER}/work/software/mplus-9.01/ComboLinux64.bin scripts
+cp "/storage/home/${USER}/work/software/mplus-9.01/ComboLinux64.bin" scripts
 
 docker build -t mplusautomation:latest .
 apptainer build mplusautomation.sif docker-daemon://mplusautomation:latest
