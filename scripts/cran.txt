@@ -1,0 +1,7 @@
+# CRAN packages wanted, one per line, never their dependencies
+# (install-cran.sh).
+
+MplusAutomation
+mvtnorm
+matrixStats
+sp

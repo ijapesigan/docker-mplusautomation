@@ -1,0 +1,1 @@
+An R image for [MplusAutomation](https://github.com/michaelhallquist/MplusAutomation), built on `ijapesigan/tidyverse`, with rhdf5 and rProject. It has no Mplus: the licensed Mplus is a local add-on (`mplusautomation-plus.sif`), never pushed.
